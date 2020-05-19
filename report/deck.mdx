@@ -1,5 +1,5 @@
 export { future as theme } from "@mdx-deck/themes";
-import imgSources from "./imgSources";
+import { Episodes } from "./components";
 
 # Hello!
 
@@ -9,32 +9,7 @@ Lorem ipsum da da da ta!
 
 ## Episodes I to VI
 
-<div style={{ display: "flex", textAlign: "center", padding: "40px" }}>
-  <div>
-    <img style={{ height: "300px" }} src={imgSources[0]} />
-    <small style={{ fontSize: "17px" }}>May 19, 1999</small>
-  </div>
-  <div>
-    <img style={{ height: "300px" }} src={imgSources[1]} />
-    <small style={{ fontSize: "17px" }}>May 16, 2002</small>
-  </div>
-  <div>
-    <img style={{ height: "300px" }} src={imgSources[2]} />
-    <small style={{ fontSize: "17px" }}>May 19, 2005</small>
-  </div>
-  <div>
-    <img style={{ height: "300px" }} src={imgSources[3]} />
-    <small style={{ fontSize: "17px" }}>May 25, 1977</small>
-  </div>
-  <div>
-    <img style={{ height: "300px" }} src={imgSources[4]} />
-    <small style={{ fontSize: "17px" }}>May 21, 1980</small>
-  </div>
-  <div>
-    <img style={{ height: "300px" }} src={imgSources[5]} />
-    <small style={{ fontSize: "17px" }}>May 25, 1983</small>
-  </div>
-</div>
+<Episodes />
 
 ---
 
