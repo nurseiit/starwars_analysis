@@ -5,11 +5,7 @@ import dates from "./dates";
 
 export const Episode = ({ e }) => (
   <div>
-    <img
-      alt={`Image for episode ${e}`}
-      style={{ height: "300px" }}
-      src={imgSources[e]}
-    />
+    <img alt="" style={{ height: "300px" }} src={imgSources[e]} />
     <small style={{ fontSize: "17px" }}>{dates[e]}</small>
     <hr style={{ width: "70px" }} />
     <small style={{ fontSize: "15px" }}>
@@ -24,6 +20,14 @@ export const Episode = ({ e }) => (
         🎞
       </span>{" "}
       {imdb[e]["critics"]}% / {imdb[e]["audience"]}%
+    </small>
+    <hr style={{ width: "20px" }} />
+    <small style={{ fontSize: "15px" }}>
+      <span role="img" aria-label="numbers emoji">
+        🔢
+      </span>{" "}
+      {(imdb[e]["critics"] + tomatoes[e]["critics"]) * 0.5}% /{" "}
+      {(imdb[e]["audience"] + tomatoes[e]["audience"]) * 0.5}%
     </small>
   </div>
 );
