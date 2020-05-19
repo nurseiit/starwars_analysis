@@ -1,8 +1,147 @@
 export { future as theme } from "@mdx-deck/themes";
+import { Episodes } from "./components";
+import meme from "./meme.png";
+import invalidNames from "./invalid_names.png";
+import simOneTwo from "./sim_1_2.png";
+import betwOneTwo from "./betw_1_2.png";
+import degOneTwo from "./deg_1_2.png";
+import simFourFive from "./sim_4_5.png";
+import betwFourFive from "./betw_4_5.png";
+import degFourFive from "./deg_4_5.png";
 
-# Hello!
+# Analysing Star Wars!
 
-Lorem ipsum da da da ta!
+`Nurseiit Abdimomyn`
+
+`20172001`
+
+---
+
+## Episodes I to VI
+
+<Episodes episodes={[0, 1, 2, 3, 4, 5]} />
+
+---
+
+## Constructing Character Graphs
+
+We draw an edge between characters appearing in the same scene.
+
+- Just like we did in the last assignment
+
+---
+
+## Useful definitions
+
+<Steps>
+
+- **Betweenness** &mdash; how many shortest paths in the network pass through this node.
+
+  - <small>Higher => more different areas connected.</small>
+
+- **Clustering** &mdash; coefficient of how much node's neighbours are neighbours of each other.
+
+  - <small>Higher => story revolves around the certain characters group.</small>
+
+</Steps>
+
+---
+
+## Episodes I & II
+
+<small style={{ marginTop: "-25px" }}>2 lowest scores</small>
+
+<Episodes episodes={[0, 1]} />
+
+---
+
+## Graphs in Episodes I & II
+
+<small>2 lowest scores</small>
+
+<div style={{ marginTop: "-200px" }}>
+  <img src={simOneTwo} style={{ width: "480px" }} />
+</div>
+
+---
+
+## Top 5 in Episodes I & II
+
+<small>2 lowest scores</small>
+
+<div style={{ display: "flex", marginTop: "-200px" }}>
+  <Steps>
+    <div>
+      <img src={betwOneTwo} style={{ width: "480px", marginRight: "30px" }} />
+    </div>
+    <div>
+      <img src={degOneTwo} style={{ width: "480px" }} />
+    </div>
+  </Steps>
+</div>
+
+---
+
+## Episodes IV & V
+
+<small style={{ marginTop: "-25px" }}>2 highest scores</small>
+
+<Episodes episodes={[3, 4]} />
+
+---
+
+## Graphs in Episodes IV & V
+
+<small>2 highest scores</small>
+
+<div style={{ marginTop: "-200px" }}>
+  <img src={simFourFive} style={{ width: "480px" }} />
+</div>
+
+---
+
+## Top 5 in Episodes IV & V
+
+<small>2 highest scores</small>
+
+<div style={{ display: "flex", marginTop: "-200px" }}>
+  <Steps>
+    <div>
+      <img src={betwFourFive} style={{ width: "480px", marginRight: "30px" }} />
+    </div>
+    <div>
+      <img src={degFourFive} style={{ width: "480px" }} />
+    </div>
+  </Steps>
+</div>
+
+---
+
+## Conclusion
+
+<Steps>
+
+- People seem to like seeing `Luke` and `C-3PO`!
+
+- As the `Clustering Coef.` of Episodes IV & V are lower
+  - the plot seems more broad and covers more character groups.
+
+</Steps>
+
+---
+
+## Issues Encountered
+
+<div style={{ display: "flex", marginTop: "-150px" }}>
+  <Steps>
+    <div>
+      <img src={invalidNames} style={{ width: "480px", marginRight: "30px" }} />
+    </div>
+    <div>
+      <img src={meme} style={{ width: "500px" }} />
+    </div>
+  </Steps>
+</div>
 
 ---
 
