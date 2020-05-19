@@ -1,5 +1,7 @@
 export { future as theme } from "@mdx-deck/themes";
 import { Episodes } from "./components";
+import meme from "./meme.png";
+import invalidNames from "./invalid_names.png";
 
 # Hello!
 
@@ -13,13 +15,54 @@ Lorem ipsum da da da ta!
 
 ---
 
-## Episodes I (lowest score) & IV (highest score)
+## Episodes I & II
 
-<Episodes episodes={[0, 3]} />
+<small style={{ marginTop: "-25px" }}>2 lowest scores</small>
+
+<Episodes episodes={[0, 1]} />
+
+---
+
+## Episodes IV & V
+
+<small style={{ marginTop: "-25px" }}>2 highest scores</small>
+
+<Episodes episodes={[3, 4]} />
+
+---
+
+## How exactly the graphs are constructed?
+
+<Steps>
+
+Lorem ipsum da da da ta!
+
+Lorem ipsum da da da ta!
+
+Lorem ipsum da da da ta!
+
+</Steps>
+
+---
+
+## Issues
+
+<div style={{ display: "flex", marginTop: "-150px" }}>
+  <Steps>
+    <div>
+      <img src={invalidNames} style={{ width: "480px", marginRight: "30px" }} />
+    </div>
+    <div>
+      <img src={meme} style={{ width: "500px" }} />
+    </div>
+  </Steps>
+</div>
 
 ---
 
 ## Useful definitions
+
+<Steps>
 
 - **Betweenness** &mdash; how many shortest paths in the network pass through this node.
 
@@ -28,6 +71,8 @@ Lorem ipsum da da da ta!
 - **Clustering** &mdash; coefficient of how much node's neighbors are neighbors of each other.
 
   - <small>Higher => story revolves around the certain characters group.</small>
+
+</Steps>
 
 ---
 
