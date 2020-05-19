@@ -5,10 +5,15 @@ import invalidNames from "./invalid_names.png";
 import simOneTwo from "./sim_1_2.png";
 import betwOneTwo from "./betw_1_2.png";
 import degOneTwo from "./deg_1_2.png";
+import simFourFive from "./sim_4_5.png";
+import betwFourFive from "./betw_4_5.png";
+import degFourFive from "./deg_4_5.png";
 
-# Hello!
+# Analysing Star Wars!
 
-Lorem ipsum da da da ta!
+`Nurseiit Abdimomyn`
+
+`20172001`
 
 ---
 
@@ -31,6 +36,22 @@ Lorem ipsum da da da ta!
 We draw an edge between characters appearing in the same scene.
 
 - Just like we did in the last assignment
+
+---
+
+## Useful definitions
+
+<Steps>
+
+- **Betweenness** &mdash; how many shortest paths in the network pass through this node.
+
+  - <small>Higher => more different areas connected.</small>
+
+- **Clustering** &mdash; coefficient of how much node's neighbours are neighbours of each other.
+
+  - <small>Higher => story revolves around the certain characters group.</small>
+
+</Steps>
 
 ---
 
@@ -74,7 +95,7 @@ We draw an edge between characters appearing in the same scene.
 <small>2 highest scores</small>
 
 <div style={{ marginTop: "-200px" }}>
-  <img src={simOneTwo} style={{ width: "480px" }} />
+  <img src={simFourFive} style={{ width: "480px" }} />
 </div>
 
 ---
@@ -86,13 +107,26 @@ We draw an edge between characters appearing in the same scene.
 <div style={{ display: "flex", marginTop: "-200px" }}>
   <Steps>
     <div>
-      <img src={betwOneTwo} style={{ width: "480px", marginRight: "30px" }} />
+      <img src={betwFourFive} style={{ width: "480px", marginRight: "30px" }} />
     </div>
     <div>
-      <img src={degOneTwo} style={{ width: "480px" }} />
+      <img src={degFourFive} style={{ width: "480px" }} />
     </div>
   </Steps>
 </div>
+
+---
+
+## Conclusion
+
+<Steps>
+
+- People seem to like seeing `Luke` and `C-3PO`!
+
+- As the `Clustering Coef.` of Episodes IV & V are lower
+  - the plot seems more broad and covers more character groups.
+
+</Steps>
 
 ---
 
@@ -108,22 +142,6 @@ We draw an edge between characters appearing in the same scene.
     </div>
   </Steps>
 </div>
-
----
-
-## Useful definitions
-
-<Steps>
-
-- **Betweenness** &mdash; how many shortest paths in the network pass through this node.
-
-  - <small>Higher => more different areas connected.</small>
-
-- **Clustering** &mdash; coefficient of how much node's neighbors are neighbors of each other.
-
-  - <small>Higher => story revolves around the certain characters group.</small>
-
-</Steps>
 
 ---
 
