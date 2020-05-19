@@ -4,8 +4,9 @@ import { tomatoes, imdb } from "./scores";
 import dates from "./dates";
 
 export const Episode = ({ e }) => (
-  <div>
+  <div style={{ padding: "0 10px" }}>
     <img alt="" style={{ height: "300px" }} src={imgSources[e]} />
+    <br />
     <small style={{ fontSize: "17px" }}>{dates[e]}</small>
     <hr style={{ width: "70px" }} />
     <small style={{ fontSize: "15px" }}>
@@ -32,9 +33,9 @@ export const Episode = ({ e }) => (
   </div>
 );
 
-export const Episodes = () => (
+export const Episodes = ({ episodes }) => (
   <div style={{ display: "flex", textAlign: "center", padding: "40px" }}>
-    {[0, 1, 2, 3, 4, 5].map((e) => (
+    {episodes.map((e) => (
       <Episode e={e} />
     ))}
   </div>
